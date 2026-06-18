@@ -2,9 +2,13 @@ plugins {
     id 'java'
 }
 
-sourceCompatibility = JavaLanguageVersion.of(11)
-targetCompatibility = JavaLanguageVersion.of(11)
-archivesBaseName = archives_base_name
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+base {
+    archivesName = archives_base_name
+}
 version = mod_version
 group = maven_group
 

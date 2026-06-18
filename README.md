@@ -1,17 +1,23 @@
-<a href='https://modrinth.com/plugin/simplewhitelist' target="_blank"><img alt='Modrinth' src='https://img.shields.io/modrinth/dt/mGVcEBwo?style=for-the-badge&logo=modrinth&label=Modrinth&labelColor=black&color=0037FF'/></a>
-# SimpleWhitelist
-\
-Download the newest plugin version on [Modrinth](https://modrinth.com/plugin/simplewhitelist)!
----
+# SimpleWhitelist (Velocity)
 
-**SimpleWhitelist** is an *essential plugin* for your private server.
+Velocity-плагин whitelist для Minecraft **26.1** (и более старых версий через Velocity 3.5.0+).
 
-### Why should you choose this plugin?
-* No hassles, players in the white list are stored by their nicknames;
-* There is support for the most used server cores (proxy & not);
-* Fully customizable messages;
-* Easy to use.
+## Требования
 
-### User usage & TO DO:
-See on [Modrinth](https://modrinth.com/plugin/simplewhitelist)!\
-There is only short description and nothing more.
+- **Velocity** 3.5.0+
+- **Java** 21+ (для сборки)
+
+## Сборка
+
+```powershell
+$env:JAVA_HOME = "C:\Program Files\BellSoft\LibericaJDK-21-Full"
+.\gradlew.bat :velocity:build
+```
+
+Готовый jar: `velocity/build/libs/simplewhitelist-velocity-2.0.1.jar`
+
+## Установка
+
+Положите jar в `plugins/` Velocity и перезапустите прокси.
+
+Конфигурация: `plugins/simplewhitelist/config.yml` и `whitelist.txt`
